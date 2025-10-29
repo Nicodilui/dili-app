@@ -1,0 +1,21 @@
+{
+  "name": "dili-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:mobile": "pnpm --filter @dili/mobile dev",
+    "dev:api": "pnpm --filter @dili/api-worker dev",
+    "db:migrate": "supabase db push",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "build": "pnpm -r build"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.2",
+    "@types/node": "^20.11.19"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
